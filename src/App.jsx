@@ -11,8 +11,8 @@ function App() {
     <div className="bg-gray-900 text-white min-h-screen px-4">
       <Hero />
       <About />
-      <Skills />
       <Experience />
+      <Skills />
       <Projects />
       <Contact />
     </div>

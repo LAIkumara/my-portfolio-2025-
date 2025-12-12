@@ -156,8 +156,8 @@ const Hero = () => {
                   </h1>
 
                   <div className="flex items-center gap-4 my-8 animate-fadeInUp animation-delay-400">
-                    <span className="text-xl text-gray-400">A Passionate</span>
-                    <span className={`text-xl text-white relative transition-opacity duration-500 ${isTyping ? 'opacity-100' : 'opacity-0'}`}>
+                    <span className="sm:text-xl text-gray-400">A Passionate</span>
+                    <span className={`sm:text-xl text-white relative transition-opacity duration-500 ${isTyping ? 'opacity-100' : 'opacity-0'}`}>
                       {roles[currentRole]}
                       <span className="absolute bottom-0 left-0 w-full h-1 bg-linear-to-r from-green-400 to-cyan-500 animate-pulse"></span>
                       <span className="animate-blink">|</span>
@@ -167,13 +167,13 @@ const Hero = () => {
                   <div className="flex flex-wrap sm:justify-start justify-center gap-4 animate-fadeInUp animation-delay-600">
                     <a 
                       href="#projects" 
-                      className="px-8 py-4 bg-linear-to-r from-green-400 to-cyan-500 text-black font-semibold rounded-lg hover:shadow-2xl hover:shadow-cyan-500/50 transition-all duration-300 text-lg hover:scale-105 hover:-translate-y-1"
+                      className="px-8 py-4 bg-linear-to-r from-green-400 to-cyan-500 text-black font-semibold rounded-lg hover:shadow-2xl hover:shadow-cyan-500/50 transition-all duration-300 sm:text-lg hover:scale-105 hover:-translate-y-1"
                     >
                       VIEW PROJECTS
                     </a>
                     <a 
                       href="#contact" 
-                      className="px-8 py-4 border-2 border-green-400 text-green-400 font-semibold rounded-lg hover:bg-green-400 hover:text-black transition-all duration-300 text-lg hover:scale-105 hover:-translate-y-1"
+                      className="px-8 py-4 border-2 border-green-400 text-green-400 font-semibold rounded-lg hover:bg-green-400 hover:text-black transition-all duration-300 sm:text-lg hover:scale-105 hover:-translate-y-1"
                     >
                       CONTACT ME
                     </a>
@@ -247,7 +247,7 @@ const Hero = () => {
           </div>
 
           {/* Floating Scroll Indicator */}
-          <div className="fixed bottom-8 right-8 animate-bounce">
+          {/* <div className="fixed bottom-8 right-8 animate-bounce">
             <a 
               href="#about" 
               className="w-14 h-14 bg-linear-to-r from-green-400 to-cyan-500 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300"
@@ -256,7 +256,7 @@ const Hero = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
               </svg>
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
 
