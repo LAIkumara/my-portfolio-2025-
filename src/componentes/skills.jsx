@@ -7,7 +7,7 @@ const Skills = () => {
   const skillCategories = [
     { id: 'all', label: 'All Skills', icon: Layers },
     { id: 'languages', label: 'Languages', icon: Code2 },
-    { id: 'frontend&backend', label: 'Frontend & backend', icon: Zap },
+    { id: 'frontend & backend', label: 'Frontend & backend', icon: Zap },
     { id: 'tools', label: 'Tools', icon: Wrench },
     { id: 'databases', label: 'Databases', icon: TrendingUp },
   ];
@@ -19,29 +19,29 @@ const Skills = () => {
     { name: 'Java', category: 'languages', level: 40, color: 'from-red-400 to-red-600', icon: '☕' },
     
     // frontend & backend
-    { name: 'React', category: 'frontend&backend', level: 95, color: 'from-cyan-400 to-cyan-600', icon: '⚛️' },
-    { name: 'Next.js', category: 'frontend&backend', level: 88, color: 'from-gray-700 to-gray-900', icon: '▲' },
-    { name: 'Node.js', category: 'frontend&backend', level: 85, color: 'from-green-500 to-green-700', icon: '🟢' },
-    { name: 'Tailwind CSS', category: 'frontend&backend', level: 92, color: 'from-teal-400 to-teal-600', icon: '🎨' },
-    { name: 'Express', category: 'frontend&backend', level: 82, color: 'from-gray-600 to-gray-800', icon: '🚀' },
-    { name: 'Spring boot', category: 'frontend&backend', level: 92, color: 'from-teal-400 to-teal-600', icon: '🌿' },
-    { name: 'Flask', category: 'frontend&backend', level: 82, color: 'from-gray-600 to-gray-800', icon: '🌶️' },
+    { name: 'React', category: 'frontend & backend', level: 75, color: 'from-cyan-400 to-cyan-600', icon: '⚛️' },
+    { name: 'Next.js', category: 'frontend & backend', level: 40, color: 'from-gray-700 to-gray-900', icon: '▲' },
+    { name: 'Node.js', category: 'frontend & backend', level: 75, color: 'from-green-500 to-green-700', icon: '🟢' },
+    { name: 'Tailwind CSS', category: 'frontend & backend', level: 90, color: 'from-teal-400 to-teal-600', icon: '🎨' },
+    { name: 'Express', category: 'frontend & backend', level: 75, color: 'from-gray-600 to-gray-800', icon: '🚀' },
+    { name: 'Spring boot', category: 'frontend & backend', level: 70, color: 'from-teal-400 to-teal-600', icon: '🌿' },
+    { name: 'Flask', category: 'frontend & backend', level: 60, color: 'from-gray-600 to-gray-800', icon: '🌶️' },
     
     // Tools
     // { name: 'AWS', category: 'tools', level: 78, color: 'from-orange-400 to-orange-600', icon: '☁️' },
     // { name: 'Docker', category: 'tools', level: 80, color: 'from-blue-500 to-blue-700', icon: '🐳' },
     { name: 'Git', category: 'tools', level: 90, color: 'from-orange-500 to-red-600', icon: '📦' },
     { name: 'VS Code', category: 'tools', level: 95, color: 'from-blue-400 to-blue-600', icon: '📝' },
-    { name: 'Postman', category: 'tools', level: 70, color: 'from-orange-400 to-orange-600', icon: '📬' },
-    { name: 'Figma', category: 'tools', level: 65, color: 'from-pink-400 to-pink-600', icon: '🎨' },
+    { name: 'Postman', category: 'tools', level: 90, color: 'from-orange-400 to-orange-600', icon: '📬' },
+    { name: 'Figma', category: 'tools', level: 85, color: 'from-pink-400 to-pink-600', icon: '🎨' },
     { name: 'Android Studio', category: 'tools', level: 60, color: 'from-green-400 to-green-600', icon: '🤖' },
     { name: 'IntelliJ IDEA', category: 'tools', level: 75, color: 'from-purple-500 to-purple-700', icon: '💡' },
     // { name: 'Redis', category: 'tools', level: 75, color: 'from-red-500 to-red-700', icon: '⚡' },
 
     //Databses
-    { name: 'MySQL', category: 'databases', level: 80, color: 'from-blue-500 to-blue-700', icon: '🐬' },
-    { name: 'SQLite', category: 'databases', level: 70, color: 'from-gray-500 to-gray-700', icon: '🗄️' },
-    { name: 'Oracle DB', category: 'databases', level: 60, color: 'from-red-600 to-red-800', icon: '🛢️' },
+    { name: 'MySQL', category: 'databases', level: 60, color: 'from-blue-500 to-blue-700', icon: '🐬' },
+    { name: 'SQLite', category: 'databases', level: 40, color: 'from-gray-500 to-gray-700', icon: '🗄️' },
+    { name: 'Oracle DB', category: 'databases', level: 40, color: 'from-red-600 to-red-800', icon: '🛢️' },
     { name: 'MongoDB', category: 'databases', level: 75, color: 'from-green-500 to-green-700', icon: '🍃' },
     { name: 'PostgreSQL(Supabase)', category: 'databases', level: 70, color: 'from-blue-600 to-blue-800', icon: '🐘' },
   ];
@@ -72,7 +72,7 @@ const Skills = () => {
             <h2 className="text-5xl md:text-6xl font-bold mb-4">
               My <span className="text-green-400">Skills</span>
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-green-400 to-cyan-500 mx-auto mb-8"></div>
+            <div className="w-24 h-1 bg-linear-to-r from-green-400 to-cyan-500 mx-auto mb-8"></div>
             <p className="text-gray-400 max-w-2xl mx-auto text-lg">
               A comprehensive overview of my technical expertise and proficiency levels
             </p>
@@ -86,7 +86,7 @@ const Skills = () => {
                 onClick={() => setActiveCategory(category.id)}
                 className={`flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
                   activeCategory === category.id
-                    ? 'bg-gradient-to-r from-green-400 to-cyan-500 text-black shadow-lg shadow-green-400/50 scale-105'
+                    ? 'bg-linear-to-r from-green-400 to-cyan-500 text-black shadow-lg shadow-green-400/50 scale-105'
                     : 'bg-white/5 backdrop-blur-md border border-white/10 hover:border-green-400/50 hover:bg-white/10'
                 }`}
               >
@@ -97,7 +97,7 @@ const Skills = () => {
           </div>
 
           {/* Skills Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 justify-center gap-6 mb-16">
             {filteredSkills.map((skill, index) => (
               <div
                 key={skill.name}
@@ -111,7 +111,7 @@ const Skills = () => {
                       {skill.icon}
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-white group-hover:text-green-400 transition-colors">
+                      <h3 className="sm:text-xl font-bold text-white group-hover:text-green-400 transition-colors">
                         {skill.name}
                       </h3>
                       <p className="text-sm text-gray-400 capitalize">{skill.category}</p>
@@ -123,9 +123,9 @@ const Skills = () => {
                 </div>
 
                 {/* Progress Bar */}
-                <div className="relative h-3 bg-white/10 rounded-full overflow-hidden">
+                {/* <div className="relative h-3 bg-white/10 rounded-full overflow-hidden">
                   <div
-                    className={`h-full bg-gradient-to-r ${skill.color} rounded-full transition-all duration-1000 ease-out relative group-hover:shadow-lg`}
+                    className={`h-full bg-linear-to-r ${skill.color} rounded-full transition-all duration-1000 ease-out relative group-hover:shadow-lg`}
                     style={{ 
                       width: `${skill.level}%`,
                       animation: 'progressBar 1s ease-out'
@@ -133,19 +133,19 @@ const Skills = () => {
                   >
                     <div className="absolute inset-0 bg-white/20 animate-shimmer"></div>
                   </div>
-                </div>
+                </div> */}
 
                 {/* Skill Level Text */}
-                <div className="mt-3 text-xs text-gray-500 flex justify-between">
+                {/* <div className="mt-3 text-xs text-gray-500 flex justify-between">
                   <span>Beginner</span>
                   <span>Expert</span>
-                </div>
+                </div> */}
               </div>
             ))}
           </div>
 
           {/* Stats Section */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 animate-fadeInUp animation-delay-400">
+          {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-6 animate-fadeInUp animation-delay-400">
             <div className="bg-white/5 backdrop-blur-md rounded-xl p-6 border border-white/10 hover:border-green-400/50 transition-all duration-300 text-center group hover:scale-105">
               <div className="text-4xl mb-2">💻</div>
               <div className="text-3xl font-bold text-green-400 mb-1">4+</div>
@@ -169,16 +169,16 @@ const Skills = () => {
               <div className="text-3xl font-bold text-yellow-400 mb-1">87%</div>
               <div className="text-sm text-gray-400">Avg Proficiency</div>
             </div>
-          </div>
+          </div> */}
 
           {/* CTA */}
           <div className="text-center mt-12 animate-fadeInUp animation-delay-600">
-            <p className="text-gray-400 mb-6 text-lg">
+            {/* <p className="text-gray-400 mb-6 text-lg">
               Want to see these skills in action?
-            </p>
+            </p> */}
             <a
               href="#projects"
-              className="inline-block px-8 py-4 bg-gradient-to-r from-green-400 to-cyan-500 text-black font-semibold rounded-lg hover:shadow-xl hover:shadow-cyan-500/50 transition-all duration-300 text-lg hover:scale-105"
+              className="inline-block px-8 py-4 bg-linear-to-r from-green-400 to-cyan-500 text-black font-semibold rounded-lg hover:shadow-xl hover:shadow-cyan-500/50 transition-all duration-300 text-lg hover:scale-105"
             >
               VIEW MY PROJECTS
             </a>
