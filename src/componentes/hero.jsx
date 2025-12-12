@@ -1,6 +1,7 @@
 import { Facebook, Twitter, Linkedin, Youtube, Zap, Sparkles, Code2, Terminal } from "lucide-react";
 import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import Navbar from "./navbar";
 
 const Hero = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -67,58 +68,8 @@ const Hero = () => {
           ))}
         </div>
 
-        <div className="relative z-10">
-          {/* Navigation */}
-          <nav className="fixed top-0 w-full backdrop-blur-md z-50 shadow-sm border-b border-white/5">
-            <div className="container mx-auto px-4 py-4">
-              <div className="flex justify-between items-center">
-                <a href="#hero" className="text-2xl font-bold bg-linear-to-r from-green-400 to-cyan-500 bg-clip-text text-transparent animate-pulse-slow">
-                  AL
-                </a>
-                
-                {/* Desktop Navigation */}
-                <div className="hidden md:flex space-x-8">
-                  {navItems.map((item) => (
-                    <a
-                      key={item.label}
-                      href={item.href}
-                      className="text-gray-300 hover:text-green-400 font-medium transition-all duration-300 relative group"
-                    >
-                      {item.label}
-                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-linear-to-r from-green-400 to-cyan-500 group-hover:w-full transition-all duration-300"></span>
-                    </a>
-                  ))}
-                </div>
-                
-                {/* Mobile menu button */}
-                <button
-                  className="md:hidden text-white hover:text-green-400 transition-colors"
-                  onClick={() => setIsOpen(!isOpen)}
-                >
-                  {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
-                </button>
-              </div>
-              
-              {/* Mobile Navigation */}
-              {isOpen && (
-                <div className="md:hidden mt-4 pb-4 animate-slideDown">
-                  <div className="flex flex-col space-y-4">
-                    {navItems.map((item) => (
-                      <a
-                        key={item.label}
-                        href={item.href}
-                        className="text-gray-300 hover:text-green-400 font-medium transition-colors py-2 hover:translate-x-2 transition-transform duration-300"
-                        onClick={() => setIsOpen(false)}
-                      >
-                        {item.label}
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </div>
-          </nav>
-
+        <div className="relative z-100">
+          <Navbar />
           {/* Hero Section */}
           <div className="px-8 md:px-16 lg:px-24 py-20 pt-32">
             <div className="max-w-6xl mx-auto">
@@ -150,7 +101,7 @@ const Hero = () => {
                   <h1 className="sm:grid sm:justify-start flex justify-center gap-3 text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mt-4 animate-fadeInUp animation-delay-200">
                     Akila
                     <br />
-                    <span className="flex justify-center items-center text-4xl md:text-6xl lg:text-7xl bg-linear-to-r from-green-400 to-cyan-500 bg-clip-text text-transparent">
+                    <span className="flex justify-end items-end  text-4xl md:text-6xl lg:text-7xl bg-linear-to-r from-green-400 to-cyan-500 bg-clip-text text-transparent sm:pb-5">
                       Liyanage
                     </span>
                   </h1>
@@ -204,24 +155,7 @@ const Hero = () => {
                     <Code2 className="absolute -left-4 bottom-24 w-10 h-10 text-cyan-400 opacity-50 animate-spin-slow" />
                     <Terminal className="absolute -right-8 top-32 w-10 h-10 text-green-400 opacity-50 animate-spin-slow animation-delay-2000" />
 
-                    {/* Social Icons */}
-                    <div className="absolute -right-20 top-1/2 -translate-y-1/2 flex flex-col gap-4">
-                      {[
-                        { Icon: Facebook, color: "hover:bg-blue-600", href: "#" },
-                        { Icon: Twitter, color: "hover:bg-sky-500", href: "#" },
-                        { Icon: Linkedin, color: "hover:bg-blue-700", href: "#" },
-                        { Icon: Youtube, color: "hover:bg-red-600", href: "#" },
-                      ].map(({ Icon, color, href }, idx) => (
-                        <a
-                          key={idx}
-                          href={href}
-                          className={`w-12 h-12 bg-white/10 backdrop-blur-md rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 hover:-translate-x-2 ${color} animate-fadeInRight`}
-                          style={{ animationDelay: `${idx * 0.1 + 0.8}s` }}
-                        >
-                          <Icon className="w-6 h-6 text-white" />
-                        </a>
-                      ))}
-                    </div>
+                    
                   </div>
                 </div>
               </div>

@@ -26,7 +26,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="min-h-screen bg-[#0a192f] text-white relative overflow-hidden sm:py-20 py-12 ">
+    <section id="about" className="  bg-[#0a192f] text-white relative overflow-hidden sm:py-20 py-12 ">
       {/* Decorative background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 right-10 w-72 h-72 bg-cyan-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
@@ -47,9 +47,10 @@ const About = () => {
         </div>
         <div className="bg-white/5 backdrop-blur-md rounded-2xl p-8 border border-white/10 hover:border-green-400/50 transition-all duration-300">
                 <p className="text-gray-300 text-justify sm:text-lg leading-relaxed mb-6">
-                  I'm a passionate <span className="text-green-400 font-semibold">Software Engineer</span> with 3+ years of experience in developing scalable web applications. My expertise lies in modern JavaScript frameworks, cloud technologies, and creating efficient, maintainable code. I believe in writing clean, tested code and following best practices. 
-                  When I'm not coding, I enjoy contributing to open-source projects, learning new technologies, and sharing knowledge with the developer community.
-                  Currently focused on mastering <span className="text-cyan-400 font-semibold">cloud-native architectures</span> and exploring the intersection of AI and web development.
+                I'm Akila Liyanage, a motivated and energetic full stack web developer with hands-on expertise in both frontend and backend technologies. 
+                I enjoy utilizing React to create dynamic user interfaces and frameworks such as Spring Boot, Node.js, and Flask for solid backend solutions. 
+                My experience encompasses the whole web development lifecycle, including planning, requirement analysis, requirement gathering, and web design. 
+                I am dedicated to developing high-quality, scalable, and user-friendly online apps.
                 </p>
         </div>
       </div>
