@@ -26,6 +26,7 @@ const Skills = () => {
     { name: 'Express', category: 'frontend & backend', level: 75, color: 'from-gray-600 to-gray-800', icon: '🚀' },
     { name: 'Spring boot', category: 'frontend & backend', level: 70, color: 'from-teal-400 to-teal-600', icon: '🌿' },
     { name: 'Flask', category: 'frontend & backend', level: 60, color: 'from-gray-600 to-gray-800', icon: '🌶️' },
+    { name: 'React Native', category: 'frontend & backend', level: 60, color: 'from-blue-400 to-blue-600', icon: '📱' },
     
     // Tools
     // { name: 'AWS', category: 'tools', level: 78, color: 'from-orange-400 to-orange-600', icon: '☁️' },
